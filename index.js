@@ -50,7 +50,31 @@ console.log("hello,world")
     console.log(playRound("rock", "paper"));
     console.log(playRound("rock", "rock"));*/
     
-
-
+    let playerScore = 0;
+    let computerScore = 0;
+    
+    function game() {
+        for (let i = 0; i < 5; i++) {
+            let playerSelection = prompt("Enter your choice (rock, paper, scissors):").toLowerCase();
+            let computerSelection = getComputerchoice();
+            let roundResult = playRound(playerSelection, computerSelection);
+            console.log(roundResult);
+            if (roundResult.includes("Win")) {
+                playerScore++;
+            } else if (roundResult.includes("Lose")) {
+                computerScore++;
+            }
+        }
+        if (playerScore > computerScore) {
+            console.log(`You won the game with a score of ${playerScore} to ${computerScore}`);
+        } else if (playerScore < computerScore) {
+            console.log(`You lost the game with a score of ${playerScore} to ${computerScore}`);
+        } else {
+            console.log(`The game was a tie with a score of ${playerScore} to ${computerScore}`);
+        }
+    }
+    console.log(game());
+    
+ 
       
       
