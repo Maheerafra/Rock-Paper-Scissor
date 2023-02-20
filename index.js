@@ -43,8 +43,8 @@ console.log("hello,world")
     }
     const playerSelection = "rock";
     const computerSelection = getComputerchoice();
-    console.log(playRound(playerSelection, computerSelection));
-   /* console.log(playRound("rock", "paper"));
+    //console.log(playRound(playerSelection, computerSelection));
+    /* console.log(playRound("rock", "paper"));
     console.log(playRound("rock", "rock"));*/
     /*console.log(playRound("rock", "scissors"));
     console.log(playRound("rock", "paper"));
