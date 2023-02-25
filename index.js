@@ -2,7 +2,7 @@ console.log("hello,world")
 
 //function Computerchoice(){
    // return random
-    
+    ll
    // }
 
     function getComputerchoice() {
