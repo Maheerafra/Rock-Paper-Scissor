@@ -2,7 +2,7 @@ console.log("hello,world")
 
 //function Computerchoice(){
    // return random
-    ll
+    
    // }
 
     function getComputerchoice() {
@@ -10,7 +10,7 @@ console.log("hello,world")
         let randomIndex = Math.floor(Math.random() * choices.length);
         return choices[randomIndex];
       }
-      
+      kk
       console.log(getComputerchoice()); // outputs one of "rock", "paper", or "scissors" at random
 
 
